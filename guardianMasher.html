@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>guardianMasher</title>
+	<meta name="generator" content="BBEdit 11.5" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link href="css/guardianMasher.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/guardianMasher.js"></script>
+	
+	<script language="javascript" type="text/javascript">
+
+	$(document).ready(function(){	
+		init();
+	
+	});
+</script>
+	
+<script>
+
+</script>
+</head>
+<body>
+<h1>Guardian of the Shared.Eco</h1>
+<p>This is an amateur attempt at mashing up The Guardian and a new, under-development API for environmental information.
+Enter a search term and it will find the most recent articles in The Guardian about it. It will then look for related items in the new environmental API. </p>
+<p>The related items are the ones after the green buttons with tags that eventually show up. It may take up to 15 seconds for any results to show up, especially in Chrome. (Firefox loads results incrementally.) It's all very preliminary. &mdash; May 22, 2017</p>
+
+
+
+
+<div id="searchdiv">
+	Search term: <textarea id="searchbox">water</textarea>
+	<input type="button" value="Search" onclick="doIt();">
+	<span id="gmeta">
+		<span>Total results: <span id="guardTotalResults"></span> &nbsp;
+		<span>Current page: <span id="guardCurrentPage"></span> 
+	</span>
+</div>
+
+<div id="guardianResultsContainer">
+	
+	<div id="guardianResultsList">
+	</div>
+</div>
+
+<div id="status"></div>
+
+<!-- for stripping html from snippets so can be sent to ClimateTagger -->
+<div id="hidden" style="display:none"></div>
+<div id="wait" style="display:none"></div> <!-- loading symbol -->
+</body>
+</html>

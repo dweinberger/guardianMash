@@ -1,0 +1,124 @@
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Sans;
+	font-size: 1em;
+}
+#searchdiv{
+	width: 100%
+	line-height: 2em;
+	background-color: #B1FFB1;
+	color: #496949;
+	font-weight: 550;
+}
+#searchbox{
+	width: 200px;
+	height: 18px;
+	font-size: 1em;
+	color: #95FFB4;
+	background-color:#33573D;
+	text-align: center;
+	border-width: 0;
+	
+}
+#gmeta{
+	display: none;
+	color:#CFAB17;
+}
+.guardresultdiv{
+/* 	background-color: #F9FFD0; */
+	border-top: 2px solid #0A743A;
+	clear: both;
+	/* display: none; */
+
+}
+.guardDate{
+	/* font-style: italic; */
+	font-size: 0.8em;
+
+}
+.guardtitle a{
+	font-size: 1.2em;
+	font-weight: 500;
+	color: #4E88E5;
+	text-decoration: none;
+}
+.gctitle a{
+	font-size: 0.9em;
+	font-weight: 500;
+	color: #17510E;
+	text-decoration: none;
+}
+.byline{
+	font-size: 9em;
+	color:red;
+}
+.leftdiv{
+	float:left;	
+	/* border: 1px dashed green; */
+	width:30%;
+}
+.leftdiv img {
+   height: 100%;
+   width: 100%;
+}
+.rightdiv{
+	float:left;
+	/* border: 1px solid blue; */
+	position: relative;
+	width: 60%;
+	margin-left: 10px;
+	height: auto;
+}
+.gcresultsdiv{
+	background-color: #A7D09C;
+}
+.gcresult{
+	/* border: 2px solid #078907; */
+	padding: 5px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	line-height: 2em
+	/* 
+border-radius: 6px;
+	color: #034504;
+ */
+}
+.guardbyline{
+	font-size: 20px;
+}
+.climatetag{
+	font-size: 0.9em;
+	background-color: #35593B;
+	padding: 2px;
+	border-radius: 4px;
+	margin-top: 10px;
+	margin-bottom:10px;
+	margin-left: 5px;
+	clear:both;
+}
+.climatetag a{
+	text-decoration: none;
+	color: yellow;
+}
+#wait {  
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background:linear-gradient(
+      			rgba(255, 255, 0, 0.45), 
+      			rgba(255, 255, 0, 0.45)
+    			),
+                url('../images/wait.gif') 
+                50% 50% 
+                no-repeat;
+}
+#status{
+	background-color: #939393;
+	color:white;
+	font-family: Mono;
+	font-size: 0.8em;
+	width: 400;
+	height: 300;
+}
